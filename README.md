@@ -1,2 +1,2 @@
 # DatingApp
-DatingApp (Learning C# and Angular Angular)
+DatingApp (Learning C# and Angular)
