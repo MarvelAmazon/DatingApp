@@ -6,7 +6,11 @@
       </button> -->
 
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/errors" routerLinkActive="active">Errors</a>
+            </li>
             <ng-container  *ngIf="currentUser$ |async">
+                
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/" routerLinkActive="active" >Matches</a>
                 </li>
