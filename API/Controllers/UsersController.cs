@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.UsersController;
 
 
-[Authorize] // Add the [Authorize] attribute to the controller
+//[Authorize] // Add the [Authorize] attribute to the controller
 public class UsersController : BaseApiController
 {
     private readonly DataContext _context; // Declare the _context variable
