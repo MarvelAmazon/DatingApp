@@ -36,10 +36,17 @@ export class AccountService {
       } ));
   }
 
+  getCurrentUser() {
+    const user = JSON.parse(localStorage.getItem('user') as string);
+    this.currentUserSource.next(user);
+    return this.currentUser$
+  }
+
   setCurrentUser(user: User) {
     this.currentUserSource.next(user);
   }
   logout() {
     localStorage.removeItem('user');
+    this.currentUserSource.next(null);
   }
 }
